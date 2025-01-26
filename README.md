@@ -1,3 +1,7 @@
+![image](https://github.com/user-attachments/assets/e9fd99ba-2dc8-48b1-b276-3fe3e3c9b8c4)
+![image](https://github.com/user-attachments/assets/ef2f0cea-e406-4bfd-a692-26a438298743)
+
+
 # Application Fuzzer
 
 A cross-platform GUI application fuzzer designed for automated testing of desktop applications. This tool allows for precise control over mouse and keyboard inputs, making it ideal for security testing and automated UI interaction testing.
