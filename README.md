@@ -90,5 +90,5 @@ python3 desktopAppFuzzer.py
    - Monitor the status in the application window
    - Check the log file for detailed results
 
-![image](https://github.com/user-attachments/assets/e9fd99ba-2dc8-48b1-b276-3fe3e3c9b8c4)
-![image](https://github.com/user-attachments/assets/ef2f0cea-e406-4bfd-a692-26a438298743)
+![image](https://github.com/user-attachments/assets/32b43904-3cac-4d32-8a5e-cb90dedd05dc)
+
