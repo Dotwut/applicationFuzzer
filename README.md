@@ -25,16 +25,19 @@ A cross-platform GUI application fuzzer designed for automated testing of deskto
 
 #### macOS
 
+```
 Clone the repository
-git clone https://github.com/yourusername/application-fuzzer.git cd application-fuzzer
+git clone https://github.com/yourusername/application-fuzzer.git
+cd application-fuzzer
 Create and activate virtual environment
 python3 -m venv venv source venv/bin/activate
 Install dependencies
 pip install -r requirements.txt
-
+```
 
 #### Linux (Ubuntu/Debian)
 
+```
 Install system dependencies
 sudo apt-get update sudo apt-get install python3-tk scrot xclip
 Clone the repository
@@ -43,17 +46,19 @@ Create and activate virtual environment
 python3 -m venv venv source venv/bin/activate
 Install dependencies
 pip install -r requirements.txt
-
+```
 
 #### Windows
 
+```
 Clone the repository
-git clone https://github.com/yourusername/application-fuzzer.git cd application-fuzzer
+git clone https://github.com/yourusername/application-fuzzer.git 
+cd application-fuzzer
 Create and activate virtual environment
 python -m venv venv .\venv\Scripts\activate
 Install dependencies
 pip install -r requirements.txt
-
+```
 
 ## Usage
 
