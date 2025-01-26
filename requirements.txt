@@ -1,15 +1,42 @@
-# Core dependencies
-pyautogui>=0.9.53
-psutil>=5.9.0
-python-xlib>=0.31  # Required for Linux X11 support
-pillow>=9.0.0     # Required by pyautogui
-mouseinfo>=0.1.3  # Required by pyautogui
-tk>=0.1.0         # For GUI support
+# Core dependencies (All platforms)
+pyautogui
+psutil
+pillow
+mouseinfo
+opencv-python
+numpy
+
+# Windows-specific dependencies
+pywin32; platform_system=="Windows"
 
 # Linux-specific dependencies
-python3-tk        # System package for Linux (install via package manager)
-scrot             # System package for Linux screenshots
-xclip             # System package for Linux clipboard support
+python-xlib; platform_system=="Linux"
 
-# Optional but recommended
-opencv-python>=4.5.0  # For better image recognition
+# Installation Notes by Platform:
+
+# Windows:
+# - Ensure Python is installed with "tcl/tk and IDLE" option checked
+# - Run as administrator if having permission issues:
+#   pip install -r requirements.txt
+
+# macOS:
+# Using Homebrew:
+# brew install python-tk
+# brew install tesseract
+# brew install opencv
+# Note: Some M1/M2 Macs might need Rosetta 2 for certain applications
+# softwareupdate --install-rosetta
+
+# Linux (Ubuntu/Debian):
+# sudo apt-get update
+# sudo apt-get install python3-tk scrot xclip tesseract-ocr
+# sudo apt-get install python3-dev python3-pip python3-setuptools
+
+# Linux (Fedora):
+# sudo dnf install python3-tkinter scrot xclip tesseract
+
+# Linux (Arch):
+# sudo pacman -S tk scrot xclip tesseract
+
+# Note: After installing system packages, run:
+# pip install -r requirements.txt
