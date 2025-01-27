@@ -4,7 +4,14 @@ psutil
 pillow
 mouseinfo
 opencv-python
+plotly
+pandas
+jinja2
+rstr
+tk
 numpy
+python-dateutil
+simplejson
 
 # Windows-specific dependencies
 pywin32; platform_system=="Windows"
@@ -24,7 +31,7 @@ python-xlib; platform_system=="Linux"
 # brew install python-tk
 # brew install tesseract
 # brew install opencv
-# Note: Some M1/M2 Macs might need Rosetta 2 for certain applications
+# Note: Some M1/M2 Macs might need Rosetta 2 for certain applications:
 # softwareupdate --install-rosetta
 
 # Linux (Ubuntu/Debian):
@@ -38,5 +45,27 @@ python-xlib; platform_system=="Linux"
 # Linux (Arch):
 # sudo pacman -S tk scrot xclip tesseract
 
-# Note: After installing system packages, run:
+# After installing system packages, run:
 # pip install -r requirements.txt
+
+# Virtual Environment Setup (Recommended):
+# Python 3.8 or higher required
+#
+# Create and activate virtual environment:
+# Windows:
+#   python -m venv venv
+#   .\venv\Scripts\activate
+#
+# macOS/Linux:
+#   python3 -m venv venv
+#   source venv/bin/activate
+#
+# Then install requirements:
+#   pip install -r requirements.txt
+
+# Additional Notes:
+# - For image recognition features, opencv-python is required
+# - For GUI functionality, tk is required
+# - For data analysis and reporting, pandas and plotly are required
+# - For template rendering, jinja2 is required
+# - For random string generation, rstr is required
